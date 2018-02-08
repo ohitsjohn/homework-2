@@ -23,6 +23,8 @@ body {
 .div1 {
     background-color: #f800db;
     margin: 5px;
+    align-self: flex-start;
+    
 }
 
 .div2 {
