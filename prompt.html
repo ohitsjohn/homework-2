@@ -9,6 +9,24 @@
         <input type="submit" value="Submit">
     </form>
 
+<script>
+    function myFunction()
+    {
+        var num1=parseInt(document.getElementById("num1").value);
+        var num1=parseInt(document.getElementById("num2").value);
+        var num1=parseInt(document.getElementById("num3").value);
+        document.getElementById("output").innerHTML=num1 + num2;
+    }
+</script>
+
+Start: <input type="text" id="num1">
+End: <input type="text" id="num2">
+Step: <input type="text" id="num3">
+
+<button onclick="myFunction()">The generated array is</button>
+
+<p id="output"></p>
+
 </body>
 </head>
 </html>
