@@ -21,9 +21,17 @@ function my(){
     var i = 0;
     
     function lp(){
-    
-    for(x=s1; x<=e1; x+=i1){
-        loop.push(x);
+
+    if (i1>0){
+        for(x=s1; x<=e1; x+=i1){
+            loop.push(x);
+        }
+    }
+
+    if (i1<0){
+        for(x=s1; x<=e1; x-=i1){
+
+        }
     }
     
     
