@@ -11,5 +11,3 @@ for(let count = 0; count < inputCount; count++) {
 document.write("Loop stopped!")
 
 
-let numArray=[3,7,9,4];
-[1,2,3,4,5].reduce((acc,val)=>prev+val);

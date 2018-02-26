@@ -32,7 +32,7 @@ function my(){
     
     document.write("The generated array is ",loop);
     
-    document.write("<br>");
+    document.write("<br />");
     
     }
     
@@ -46,7 +46,7 @@ function my(){
     
     document.write("The sum is ",i);
     
-    document.write("<br>");
+    document.write("<br />");
     
     }
     
@@ -60,9 +60,9 @@ function my(){
     
     loop1.toString();
     
-    document.write("The generated array is ",loop1);
+    document.write("The binary of absolute element values are: ",loop1);
     
-    document.write("<br>");
+    document.write("<br />");
     
     }
     
