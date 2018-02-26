@@ -67,34 +67,22 @@
 
 <div class="container">
     <div class="row">
-    <div class="col-sm-12 pink">
-        <script>
-        function myFunction()
-        {
-        var num1=parseInt(document.getElementById("num1").value);
-        var num1=parseInt(document.getElementById("num2").value);
-        var num1=parseInt(document.getElementById("num3").value);
-        document.getElementById("output").innerHTML=num1 + num2;
-        }
-        </script>
-
-        Start: <input type="text" id="num1">
-        End: <input type="text" id="num2">
-        Step: <input type="text" id="num3">
-
-        <button onclick="myFunction()">The generated array is</button>
-
-        <p id="output"></p>
-
-        <h2>JavaScript Homework</h2>
-        <h3>The program output</h3>
-        <hr>
-        <p id='output'></p>
-        <hr>
-        <script src="loop.js"></script>
-
+        <div class="col-sm-12 pink">
+        
+            <script src="end.js"></script>
+            
+            <form method="post" onsubmit="my()">
+            Start:
+            <input type="text" id="start" name="start"><br>
+            End:
+            <input type="text" id="end" name="end"><br>
+            Increment:
+            <input type="text" id="inc" name="end"><br>
+            <input type="submit" name="submit" value="Submit">
+        </div>
     </div>
 </div>
+
     
 
 
