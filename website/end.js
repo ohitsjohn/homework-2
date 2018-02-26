@@ -22,54 +22,54 @@ function my(){
     
     function lp(){
 
-    if (i1>0){
-        for(x=s1; x<=e1; x+=i1){
-            loop.push(x);
+        if (i1>0){
+            for(x=s1; x<=e1; x+=i1){
+                loop.push(x);
+            }
         }
-    }
 
-    if (i1<0){
-        for(x=s1; x<=e1; x-=i1){
-            loop.push(x);
+        if (i1<0){
+            for(x=s1; x<=e1; x-=i1){
+                loop.push(x);
+            }
         }
-    }
-    
-    
-    loop.toString();
-    
-    document.write("The generated array is ",loop);
-    
-    document.write("<br />");
+        
+        
+        loop.toString();
+        
+        document.write("The generated array is ",loop);
+        
+        document.write("<br />");
     
     }
     
     function sum(){
     
-    for(x = s1 ;x<=e1 ; x+=i1 ){
+        for(x = s1 ;x<=e1 ; x+=i1 ){
+        
+        i = i+ x;
+        
+        }
     
-    i = i+ x;
-    
-    }
-    
-    document.write("The sum is ",i);
-    
-    document.write("<br />");
+        document.write("The sum is ",i);
+        
+        document.write("<br />");
     
     }
     
     function binary(){
     
-    for(x = s1 ;x<=e1 ; x+=i1 ){
+        for(x = s1 ;x<=e1 ; x+=i1 ){
+        
+        loop1.push(parseInt(x, 10).toString(2));
+        
+        }
     
-    loop1.push(parseInt(x, 10).toString(2));
-    
-    }
-    
-    loop1.toString();
-    
-    document.write("The binary of absolute element values are: ",loop1);
-    
-    document.write("<br />");
+        loop1.toString();
+        
+        document.write("The binary of absolute element values are: ",loop1);
+        
+        document.write("<br />");
     
     }
     
