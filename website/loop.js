@@ -10,3 +10,4 @@ for(let count = 0; count < inputCount; count++) {
 } 
 document.write("Loop stopped!")
 
+[1,2,3,4,5].reduce((acc,val)=>prev+val);
