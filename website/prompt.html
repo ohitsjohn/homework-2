@@ -65,24 +65,29 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="row">
+    <div class="col-sm-8 pink">
+        <script>
+        function myFunction()
+        {
+        var num1=parseInt(document.getElementById("num1").value);
+        var num1=parseInt(document.getElementById("num2").value);
+        var num1=parseInt(document.getElementById("num3").value);
+        document.getElementById("output").innerHTML=num1 + num2;
+        }
+        </script>
 
-<script>
-function myFunction()
-{
-var num1=parseInt(document.getElementById("num1").value);
-var num1=parseInt(document.getElementById("num2").value);
-var num1=parseInt(document.getElementById("num3").value);
-document.getElementById("output").innerHTML=num1 + num2;
-}
-</script>
+        Start: <input type="text" id="num1">
+        End: <input type="text" id="num2">
+        Step: <input type="text" id="num3">
 
-Start: <input type="text" id="num1">
-End: <input type="text" id="num2">
-Step: <input type="text" id="num3">
+        <button onclick="myFunction()">The generated array is</button>
 
-<button onclick="myFunction()">The generated array is</button>
-
-<p id="output"></p>
+        <p id="output"></p>
+    </div>
+</div>
+    
 
 
 <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
