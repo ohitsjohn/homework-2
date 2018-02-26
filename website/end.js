@@ -30,7 +30,7 @@ function my(){
 
     if (i1<0){
         for(x=s1; x<=e1; x-=i1){
-
+            loop.push(x);
         }
     }
     
