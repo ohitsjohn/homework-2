@@ -27,7 +27,7 @@ function my(){
                 loop.push(x);
             }
         } else {
-            for(x=s1; x<=e1; x-=i1){
+            for(x=s1; x<=e1; x=x-i1){
                 loop.push(x);
             }
         }
