@@ -18,20 +18,16 @@ var loop1 = [];
 
 var i = 0;
 
-if(typeof s == 'number'){
-   document.write(num1 + " is a number <br/>");
-}else{
+if(isNaN(i)){
    document.write(num1 + " is not a number <br/>");
+}else{
+   document.write(num1 + " is a number <br/>");
 }
 
-if(typeof e == 'number'){
-    document.write(num1 + " is a number <br/>");
+var str1 = "mkyong"
+if(isNaN(str1)){
+   document.write(str1 + " is not a number <br/>");
 }else{
-    document.write(num1 + " is not a number <br/>");
+   document.write(str1 + " is a number <br/>");
 }
 
-if(typeof i == 'number'){
-    document.write(num1 + " is a number <br/>");
-}else{
-    document.write(num1 + " is not a number <br/>");
-}
