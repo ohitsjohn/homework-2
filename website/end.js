@@ -22,13 +22,12 @@ function my(){
     
     function lp(){
 
-        if (i1>=1){
-            for(x=s1; x<=e1; x+=i1){
-                loop.push(x);
-            } else {
-                for(x=s1; x<=e1; x-=i1){
-                    loop.push(x);
-                }
+        for(x=s1; x<=e1; x+=i1){
+            loop.push(x);
+        }
+        for(x=s1; x<=e1; x-=i1){
+            loop.push(x);
+        }
             
         
         
