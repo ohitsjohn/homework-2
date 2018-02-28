@@ -1,0 +1,60 @@
+html {
+    background-color: #fa923f;
+    padding: 10px;
+}
+
+body {
+    background-color: yellow;
+    padding: 10px;
+    margin: 0;
+}
+
+.parent {
+    background-color: tomato;
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.div1 {
+    background-color: #f800db;
+    margin: 5px;
+    align-self: flex-start;
+    
+}
+
+.div2 {
+    background-color: #f800db;
+    margin: 5px;
+    width: 150px;
+    font-size: 30px;
+}
+
+.div3 {
+    background-color: #f800db;
+    margin: 5px;
+    height: 150px;
+}
+
+.div4 {
+    background-color: #f800db;
+    margin: 5px;
+    width: 150px;
+    height: 150px;         
+}
+
+.div5 {
+    background-color: #f800db;
+    margin: 5px;
+    width: 200px;           
+}
+
+.div6 {
+    background-color: #f800db;
+    margin: 5px;
+    width: 200px;
+}
