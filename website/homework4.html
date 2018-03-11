@@ -9,12 +9,7 @@
     .pink{
         background: pink;
         border: 1px solid purple;
-        },
-    .blue{
-        background: lightblue;
-        border: 1px solid darkblue;
-        }   
-    }
+        }
     </style>
 </head>
 
@@ -71,29 +66,36 @@
     </div>
 </div>
 
-<div class="row">
-        <div class="col-md-6 pink">Main Content</div>
-        <div class="row">
-                <div class="col-md-4 offset-md-3 bg-info">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 pink">
 
-                        <div class="row bg-secondary">
-                            <div class="col-4 col-sm-4 bg-warning">The Aside Card Header</div>
-                            
-                            Card Title<br>lorem ipsum dolor sit amet, consectetur adiplsicing elit. allas animi laudantium dolorum incidunt ipsa magni necessitatibus dolore 
-               
-                            <div class="col-4 col-sm-4 bg-warning">Card Footer</div>  
-                        </div>
-                        
-                    </div>
-                </div>
-          </div>
+            <h2>Using the XMLHttpRequest Object</h2>
 
-      <div class="row">
-        <div class="col-md-6 offset-md-3 pink">Section 1</div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 offset-md-3 pink">Section 2</div>
+            <div id="demo">
+            <button type="button" onclick="loadXMLDoc()">Change Content</button>
+            </div>
+            
+            <script>
+            function loadXMLDoc() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML =
+                    this.responseText;
+                }
+                };
+                xhttp.open("GET", "xmlhttp_info.txt", true);
+                xhttp.send();
+            }
+            </script>
+
+            
+        </div>
+    </div>
 </div>
+
+    
 
 
 <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -103,3 +105,4 @@
 
 </body>
 </html>
+
