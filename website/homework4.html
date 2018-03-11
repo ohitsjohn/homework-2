@@ -70,26 +70,27 @@
     <div class="row">
         <div class="col-sm-12 pink">
 
-            <h2>Using the XMLHttpRequest Object</h2>
-
-            <div id="demo">
-            <button type="button" onclick="loadXMLDoc()">Change Content</button>
-            </div>
-            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+            </script>
             <script>
-            function loadXMLDoc() {
-                var xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("demo").innerHTML =
-                    this.responseText;
-                }
-                };
-                xhttp.open("GET", "xmlhttp_info.txt", true);
-                xhttp.send();
-            }
+                $(document).ready(function () {
+                    $("button").click(function () {
+                        $.ajax({
+                            url: 'https://httpbin.org/get',
+                            type: 'GET',
+                            success: function (data, status) {
+                                alert("Data: " + data + "\nStatus: " + status);  
+                            },
+                            error: function (data) {
+                                alert('woops!'); //or whatever
+                            }
+                        });
+                    });
+                });
             </script>
 
+            <button>Send an HTTP GET request
+            </button>
             
         </div>
     </div>
