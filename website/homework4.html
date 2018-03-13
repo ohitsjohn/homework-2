@@ -74,24 +74,25 @@
                 <div id="XMLHttpRequestDemo" style="color: blue; font-style: italic; word-wrap: break-word;"></div>                
                 <h2>Using fetch()</h2>                
                 <div id="fetchRequestDemo" style="color: blue; font-style: italic;word-wrap: break-word;"></div>                
-                <script>
+               
+               <script>
                 // Using XMLHttpRequest                
                 function loadUsersJson() {               
                 var xhttp = new XMLHttpRequest();               
                 xhttp.onreadystatechange = function() {                
-                        if (this.readyState == 4 && this.status == 200) {                
-                            var myObj = JSON.parse(this.responseText);               
-                            //Sort by email ID               
-                            myObj.sort(function(a, b) {                
-                                    return a.email.toLowerCase() > b.email.toLowerCase()                
-                            });               
-                            // Print email IDS               
-                            var jsonArray = [];              
-                            for (x in myObj) {               
-                                    jsonArray.push(myObj[x].email);               
-                            }               
-                            document.getElementById("XMLHttpRequestDemo").innerHTML = jsonArray;              
-                            }              
+                    if (this.readyState == 4 && this.status == 200) {                
+                        var myObj = JSON.parse(this.responseText);               
+                        //Sort by email ID               
+                        myObj.sort(function(a, b) {                
+                                return a.email.toLowerCase() > b.email.toLowerCase()                
+                        });               
+                        // Print email IDS               
+                        var jsonArray = [];              
+                        for (x in myObj) {               
+                            jsonArray.push(myObj[x].email);               
+                        }               
+                        document.getElementById("XMLHttpRequestDemo").innerHTML = jsonArray;              
+                        }              
                     };              
                     xhttp.open("GET", "https://jsonplaceholder.typicode.com/users", true);               
                     xhttp.send();               
