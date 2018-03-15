@@ -3,6 +3,7 @@ lb.addEventListener('click', () => {
     console.log('the Link is clicked')
     e.stopPropagation()
     e.preventDefault()
+    window.location='http://www.google.com'
 })
 
 const btn = document.querySelectory('#myButton')
