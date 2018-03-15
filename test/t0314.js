@@ -38,7 +38,7 @@ const output = document.getElementById('output')
 addBtn.addEventListener('click', () => {
     const val1 = num1.value
     const val1 = num2.value
-    const sum = val1 + val2
+    const sum = parseInt(val1, 2) + parseInt(val2, 2)
     output.innerHTML = sum
-    
+
 })
