@@ -6,7 +6,7 @@ lb.addEventListener('click', () => {
     window.location='http://www.google.com'
 })
 
-const btn = document.querySelectory('#myButton')
+const btn = document.querySelector('#myButton')
 
 function addLang(e) {
     console.log('addLang called')
