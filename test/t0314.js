@@ -27,3 +27,18 @@ function mouseEventHandler(e) {
 }
 
 document.addEventListener('click', mouseEventHandler)
+
+
+
+const addBtn = document.querySelector('#addBtn')
+const num1 = document.getElementById('num1')
+const num1 = document.getElementById('num2')
+const output = document.getElementById('output')
+
+addBtn.addEventListener('click', () => {
+    const val1 = num1.value
+    const val1 = num2.value
+    const sum = val1 + val2
+    output.innerHTML = sum
+    
+})
