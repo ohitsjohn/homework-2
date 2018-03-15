@@ -1,7 +1,13 @@
-alert('I am alive')
 
 const btn = document.querySelectory('#myButton')
 
 btn.addEventListener('click', () => {
-    alert('clicked')
+    console.log('clicked')
+
+    const el=document.createElement('li')
+    el.innerHTML='c++'
+
+    const languages = document.getElementById('languages')
+    languages.appendChild(el)
+    
 })
