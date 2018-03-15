@@ -1,7 +1,7 @@
 const btn = document.querySelectory('#myButton')
 
 function addLang(e) {
-    console.log('addLang called ${e}')
+    console.log('addLang called')
     const el=document.createElement('li')
     el.innerHTML='C++'
 
