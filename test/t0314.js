@@ -1,3 +1,10 @@
+const lb=document.querySelector('a')
+lb.addEventListener('click', () => {
+    console.log('the Link is clicked')
+    e.stopPropagation()
+    e.preventDefault()
+})
+
 const btn = document.querySelectory('#myButton')
 
 function addLang(e) {
