@@ -1,7 +1,7 @@
 
 const btn = document.querySelectory('#myButton')
 
-function addLang(lang) {
+function addLang() {
     console.log('addLang called')
     const el=document.createElement('li')
     el.innerHTML='c++'
@@ -10,4 +10,4 @@ function addLang(lang) {
     languages.appendChild(el) 
 }
 
-btn.addEventListener('click', addLang('C++'))
+btn.addEventListener('click', addLang
