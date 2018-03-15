@@ -35,7 +35,7 @@ document.addEventListener('click', mouseEventHandler)
 
 const addBtn = document.querySelector('#addBtn')
 const num1 = document.getElementById('num1')
-const num1 = document.getElementById('num2')
+const num2 = document.getElementById('num2')
 const output = document.getElementById('output')
 
 addBtn.addEventListener('click', () => {
